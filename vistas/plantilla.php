@@ -7,7 +7,15 @@
 	<?php include "inc/Link.php";?>
 </head>
 <body>
-	
+	<?php
+		$peticionAjax=false;
+		require_once"./controladores/VistasControlador.php";
+		$IV = new VistasControlador();
+		$vistas=$IV -> obtener_vistas_controlador();
+		if($vistas == "login"){
+
+		}
+	?>
 	<!-- Main container -->
 	<main class="full-box main-container">
 		<!-- Nav lateral -->
